@@ -1,0 +1,30 @@
+def coverage(explanations):
+    # Compute the proportion of instances for which the explanation method can generate an explanation
+    # ...
+
+    return coverage_score
+
+def fidelity(explanations, model, X, y):
+    # Compute the degree to which the explanation accurately represents the model's behavior
+    # ...
+
+    return fidelity_score
+
+def comprehensibility(explanations):
+    # Compute the ease with which a human can understand the explanation
+    # ...
+
+    return comprehensibility_score
+
+def compute_metrics(explanations, model, X, y):
+    coverage_score = coverage(explanations)
+    fidelity_score = fidelity(explanations, model, X, y)
+    comprehensibility_score = comprehensibility(explanations)
+
+    metrics = {
+        "coverage": coverage_score,
+        "fidelity": fidelity_score,
+        "comprehensibility": comprehensibility_score
+    }
+
+    return metrics
