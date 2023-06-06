@@ -1,0 +1,7 @@
+main.py: The main script that runs the Explainable AI Validator.
+model.py: Contains the AI model to be evaluated.
+explanation_generator.py: Generates explanations for the model's predictions using LIME or SHAP.
+evaluation_metrics.py: Computes evaluation metrics like coverage, fidelity, and comprehensibility.
+human_evaluation.py: Collects human evaluations of the generated explanations.
+comparison.py: Compares AI-generated explanations with human evaluations and provides feedback.
+utils.py: Contains utility functions for data preprocessing, visualization, and other tasks.
